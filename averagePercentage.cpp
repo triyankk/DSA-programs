@@ -6,6 +6,7 @@ void calculateAverageAndPercentage(int marks1, int marks2, int marks3, double &a
 
 int main()
 {
+    
     // Input marks from the user
     int subject1, subject2, subject3;
     cout << "Enter marks for Subject 1: ";
