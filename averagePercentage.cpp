@@ -15,7 +15,6 @@ int main() {
     cin >> subject3;
     // Declare variables to store the results
     double avg, percent;
-
     // Call the function using call by value and call by reference
     calculateAverageAndPercentage(subject1, subject2, subject3, avg, percent);
 
