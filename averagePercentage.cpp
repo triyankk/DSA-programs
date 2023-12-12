@@ -13,7 +13,6 @@ int main() {
     cin >> subject2;
     cout << "Enter marks for Subject 3: ";
     cin >> subject3;
-
     // Declare variables to store the results
     double avg, percent;
 
