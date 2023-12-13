@@ -6,7 +6,6 @@ void calculateAverageAndPercentage(int marks1, int marks2, int marks3, double &a
 
 int main()
 {
-    
     // Input marks from the user
     int subject1, subject2, subject3;
     cout << "Enter marks for Subject 1: ";
@@ -24,7 +23,6 @@ int main()
     cout << "Percentage: " << percent << "%" << endl;
     return 0;
 }
-
 // Function to calculate average and percentage using call by reference
 void calculateAverageAndPercentage(int marks1, int marks2, int marks3, double &average, double &percentage)
 {
