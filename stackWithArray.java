@@ -9,7 +9,7 @@ class Stack {
         return (top < 0);
     }
 
-    void stack() {
+    Stack() {
         top = -1;
     }
 
@@ -37,18 +37,40 @@ class Stack {
     }
 
     void display() {
-        for (int num : arr) {
-            System.out.println(num);
+        for (int i = 0; i < top; ++i) {
+            System.out.println(arr[i]);
         }
     }
 }
 
 public class stackWithArray {
     public static void main(String[] args) {
-        int choice=0;
-        Scanner sc=new Scanner(System.in);
-        Stack s=new Stack();
-        System.out.println();
+        int choice = 0;
+        Scanner sc = new Scanner(System.in);
+        Stack s = new Stack();
+        while (true) {
+            System.out.println("\nEnter choice 1-5 \n1-IsEmpty\n2-push\n3-pop\n4-display all element\n5-exit");
+            choice = sc.nextInt();
+            if (choice == 5)
+                break;
 
+            switch (choice) {
+                case 1:
+                    System.out.println("\n" + s.isEmpty());
+                    break;
+                case 2:
+                    s.push(sc);
+                    break;
+                case 3:
+                    s.pop();
+                    break;
+                case 4:
+                    s.display();
+                    break;
+                default:
+                    System.out.println("enter a valid input");
+                    break;
+            }
+        }
     }
 }
