@@ -12,7 +12,6 @@ class Stack {
     Stack() {
         top = -1;
     }
-
     void push(Scanner sc) {
         if (top == maxsize) {
 
