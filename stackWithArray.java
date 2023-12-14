@@ -14,31 +14,46 @@ class Stack {
     }
 
     void push(Scanner sc) {
-        if (top == maxsize)
-            System.out.println("overflow");
-        else {
+        if (top == maxsize) {
 
-            System.out.println("Enter an Integer");
-            int num = sc.nextInt();
+            System.out.println("___________________");
+            System.out.println("overflow");
+        } else {
             top++;
-            arr[top] = num;
+            System.out.println("___________________");
+            System.out.println("Enter an Integer");
+            arr[top] = sc.nextInt();
+            System.out.println("___________________");
             System.out.println("item pushed");
         }
     }
 
     void pop() {
-        if (top < 0)
+        if (top < 0) {
+
+            System.out.println("___________________");
             System.out.println("Underflow");
-        else {
+        } else {
             top--;
+            System.out.println("___________________");
             System.out.println("item popped");
         }
 
     }
 
     void display() {
-        for (int i = 0; i < top; ++i) {
-            System.out.println(arr[i]);
+        if (top == -1) {
+
+            System.out.println("___________________");
+            System.out.println("\nstack is empty");
+        } else{
+            System.out.println("___________________");
+            System.out.println("\nPrinting stack");
+            System.out.println("___________________");
+            
+            for (int i = 0; i<=top; ++i) {
+                System.out.println(arr[i]);
+            }
         }
     }
 }
@@ -49,13 +64,16 @@ public class stackWithArray {
         Scanner sc = new Scanner(System.in);
         Stack s = new Stack();
         while (true) {
+            System.out.println("___________________");
             System.out.println("\nEnter choice 1-5 \n1-IsEmpty\n2-push\n3-pop\n4-display all element\n5-exit");
+            System.out.println("___________________");
             choice = sc.nextInt();
             if (choice == 5)
                 break;
 
             switch (choice) {
                 case 1:
+                    System.out.println("___________________");
                     System.out.println("\n" + s.isEmpty());
                     break;
                 case 2:
