@@ -1,4 +1,5 @@
 import static java.lang.System.exit;
+
 class dummy {
     private class node {
         int data;
@@ -50,7 +51,14 @@ class dummy {
             System.out.println("underflow");
             exit(1);
         } else {
-            
+            node temp = top;
+            while (temp != null) {
+                System.out.println(temp.data);
+                temp = temp.link;
+                if (temp != null) {
+                    System.out.println("-> ");
+                }
+            }
         }
     }
 
@@ -58,6 +66,20 @@ class dummy {
 
 public class stackLinkedList {
     public static void main(String[] args) {
+        dummy obj = new dummy();
+
+        System.out.printf("top element is %d\n", obj.peek());
+        obj.push(12);
+        obj.push(13);
+        obj.push(14);
+        obj.push(15);
+        obj.push(16);
+        obj.display();
+        System.out.printf("top element is %d\n", obj.peek());
+        obj.pop();
+        obj.pop();
+        obj.display();
+        System.out.printf("top element is %d\n", obj.peek());
 
     }
 
