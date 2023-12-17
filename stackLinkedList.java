@@ -67,7 +67,6 @@ class dummy {
 public class stackLinkedList {
     public static void main(String[] args) {
         dummy obj = new dummy();
-
         System.out.printf("top element is %d\n", obj.peek());
         obj.push(12);
         obj.push(13);
