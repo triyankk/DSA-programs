@@ -23,7 +23,6 @@ class dummy {
         temp.link = top;
         top = temp;
     }
-
     public boolean isEmpty() {
         return top == null;
     }
