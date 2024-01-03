@@ -63,6 +63,7 @@ class dummy {
     }
 
 }
+
 public class stackLinkedList {
     public static void main(String[] args) {
         dummy obj = new dummy();
