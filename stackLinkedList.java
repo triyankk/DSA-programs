@@ -15,10 +15,6 @@ class dummy {
     public void push(int x) {
         node temp = new node();
 
-        if (temp == null) {
-            System.out.println("Stack Overflow");
-            return;
-        }
         temp.data = x;
         temp.link = top;
         top = temp;

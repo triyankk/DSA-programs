@@ -5,12 +5,14 @@ class Stack {
     int maxsize = 10;
     int[] arr = new int[maxsize];
 
-    boolean isEmpty() {
-        return (top < 0);
-    }
     Stack() {
         top = -1;
     }
+
+    boolean isEmpty() {
+        return (top < 0);
+    }
+
     void push(Scanner sc) {
         if (top == maxsize) {
 
@@ -44,12 +46,12 @@ class Stack {
 
             System.out.println("___________________");
             System.out.println("\nstack is empty");
-        } else{
+        } else {
             System.out.println("___________________");
             System.out.println("\nPrinting stack");
             System.out.println("___________________");
-            
-            for (int i = 0; i<=top; ++i) {
+
+            for (int i = 0; i <= top; ++i) {
                 System.out.println(arr[i]);
             }
         }
